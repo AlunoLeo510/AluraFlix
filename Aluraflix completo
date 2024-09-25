@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AluraFlix</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            margin: 0;
+            font-family: "Chakra Petch", sans-serif;
+            margin-bottom: 100px;
+        }
+
+
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+        }
+
+
+        section {
+            background: rgb(184, 156, 213);
+            padding-bottom: 80px;
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-direction: column;
+        }
+
+
+        h2 {
+            margin-top: 20px;
+            color: rgb(42, 122, 228);
+        }
+
+
+        .chamada {
+            background: rgb(184, 156, 213);
+            padding-bottom: 80px;
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        .chamada-texto {
+            font-size: 18px;
+        }
+
+
+        .categoria {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px; /* Margem inferior para espaçamento */
+        }
+
+
+        .fila-videos {
+            display: flex;
+            overflow-x: auto; /* Ativar scroll horizontal */
+            padding: 20px;
+            gap: 10px; /* Espaçamento entre elementos */
+        }
+
+
+        .fila-videos a {
+            flex: 0 0 auto; /* Impede que as thumbnails se estiquem */
+        }
+
+
+        .categoria-videos img {
+            opacity: 0.5;
+            height: 120px; /* Tamanho reduzido para as thumbnails */
+            transition: opacity 0.3s, border 0.3s; /* Transições para borda e opacidade */
+            border: 2px solid transparent; /* Borda padrão */
+        }
+
+
+        .categoria-videos img:hover {
+            opacity: 1.0; /* Efeito de opacidade ao passar o mouse */
+            border: 2px solid rgb(42, 122, 228); /* Borda ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ALURAFLIX</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#classicos">Clássicos</a>
+            <a href="#acao">Ação e Aventura</a>
+            <a href="#romance">Romance</a>
+            <a href="#ficcao">Ficção Científica</a>
+            <a href="#filmes-recomendados">Filmes Recomendados</a>
+        </nav>
+    </header>
+
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h2>Bem-vindo ao AluraFlix!</h2>
+            <p>Aqui você encontra uma seleção incrível de filmes e séries para todos os gostos.</p>
+        </div>
+    </section>
+
+
+    <main>
+        <section class="video-container">
+            <iframe src="https://www.youtube.com/embed/gt_fAE1Eg2Q?rel=0" title="YouTube video player" allowfullscreen></iframe>
+        </section>
+       
+        <section id="filmes-recomendados" class="filmes-recomendados">
+            <h2>Filmes Recomendados</h2>
+            <div class="filme-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nCmIwcycUJ8?si=fqifaiblnmSJ0Rnz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Tudo sobre o OSCAR DE ANIMAÇÃO 2023!</h3>
+            </div>
+            <div class="filme-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cs15QqG6Gjc?si=NTdQtdC-JEZYbB_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Meus 10 LANÇAMENTOS MAIS ESPERADOS de 2024</h3>
+            </div>
+            <div class="filme-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FvRmEapoHRc?si=eOyEMY8KOG4ku2TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>ONE PIECE e a vitória da sinceridade! | Review SEM SPOILERS!</h3>
+            </div>
+            <div class="filme-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ipkw_hWW-Hw?si=wth4CCKFqplr8BQD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Adaptações de games são o futuro do cinema? RESPONDE, MIKANNN #35</h3>
+            </div>
+            <div class="filme-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d4DzMNGoyis?si=O5SzX2Nb7NzRL2vW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>FILME DO MARIO É PURA NOSTALGIA, ISSO É BOM?</h3>
+            </div>
+        </section>
+
+
+        <section class="categoria">
+            <h2>Filmes e Séries Favoritos</h2>
+            <div class="fila-videos categoria-videos">
+                <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
+                    <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Filme/Série 1" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
+                    <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" alt="Filme/Série 2" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
+                    <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" alt="Filme/Série 3" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
+                    <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" alt="Filme/Série 4" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
+                    <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" alt="Filme/Série 5" />
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 AluraFlix</p>
+    </footer>
+</body>
+</html>
